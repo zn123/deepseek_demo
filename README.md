@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ## 注册 deepseek 账号
 * https://www.deepseek.com/ 
 * 申请 appkey
-* 编辑 uitls/funtion.py
+* 编辑 utils/funtion.py
 
 ```
 client = OpenAI(
