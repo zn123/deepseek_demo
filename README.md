@@ -1,3 +1,5 @@
+2025.1 DeepSeek-R1 上线 API，对用户开放思维链输出，通过设置 model='deepseek-reasoner' 即可调用。
+
 ## 安装
 ```
 conda create -n deep python=3.10 

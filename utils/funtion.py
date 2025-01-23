@@ -31,7 +31,7 @@ def GetDeepseekMsg(message, history):
 
     # 调用 OpenAI 客户端的 chat.completions.create 方法来生成回复
     completion = client.chat.completions.create(
-      model="deepseek-chat",  # 使用指定的模型 "deepseek-chat"
+      model="deepseek-reasoner",  # 使用指定的模型 deepseek-chat deepseek-reasoner
       messages=[{"role":"user","content":message}],  # 输入消息，指定角色为 "user" 并提供消息内容
       temperature=0.2,  # 控制生成文本的随机性，值越低，生成的文本越确定
       top_p=0.7,  # 核概率，用于筛选最可能的词
