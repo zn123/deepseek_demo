@@ -1,3 +1,5 @@
+2025.2 deepseek api 申请平替网站，deepseek 官网api已经不能用了
+硅基流动：https://cloud.siliconflow.cn/i/myqE5Km4
 2025.1 DeepSeek-R1 上线 API，对用户开放思维链输出，通过设置 model='deepseek-reasoner' 即可调用。
 
 ## 安装
