@@ -20,9 +20,16 @@ def text_to_speech(text):
 
 # 导入 OpenAI 模块（假设已正确安装）
 # 创建 OpenAI 客户端实例，配置基础 URL 和 API 密钥
+# deepseek 官网
+# "https://api.deepseek.com/v1",model="deepseek-reasoner" ,#deepseek-chat deepseek-reasoner
+# 硅基流动
+# "https://api.siliconflow.cn/v1",model="deepseek-ai/DeepSeek-V3",
+# 免费可用模型参数：deepseek-ai/DeepSeek-R1,  deepseek-ai/DeepSeek-V3,
+# 充值可用模型参数：Pro/deepseek-ai/DeepSeek-R1,Pro/deepseek-ai/DeepSeek-V3
+
 client = OpenAI(
-  base_url = "https://api.deepseek.com/v1",
-  api_key = "xxxx"
+  base_url = "https://api.siliconflow.cn/v1",
+  api_key = "sk-dpojqgayawpikxbawetesvliesxoudrknukvktdzntwbrycf"
 )
 
 # 定义函数 GetDeepseekMsg，用于获取 DeepSeek 的响应消息
@@ -31,7 +38,7 @@ def GetDeepseekMsg(message, history):
 
     # 调用 OpenAI 客户端的 chat.completions.create 方法来生成回复
     completion = client.chat.completions.create(
-      model="deepseek-reasoner",  # 使用指定的模型 deepseek-chat deepseek-reasoner
+      model="deepseek-ai/DeepSeek-V3",  # 使用指定的模型 deepseek-chat deepseek-reasoner
       messages=[{"role":"user","content":message}],  # 输入消息，指定角色为 "user" 并提供消息内容
       temperature=0.2,  # 控制生成文本的随机性，值越低，生成的文本越确定
       top_p=0.7,  # 核概率，用于筛选最可能的词
